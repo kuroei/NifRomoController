@@ -167,7 +167,7 @@
                        withQos:ExactlyOnce
                         retain:NO
              completionHandler:nil];
-    NSLog(@"msg->%@",pubMsg);
+    // NSLog(@"msg->%@",pubMsg);
 }
 
 -(void)startForward:(id)sender {
@@ -185,7 +185,7 @@
     [self sendStatus];
 }
 
--(IBAction)stopBack:(id)sender {
+-(void)stopBack:(id)sender {
     self.status &= noBack;
     [self sendStatus];
 }
