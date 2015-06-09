@@ -149,6 +149,23 @@
     [self.rtcclient connectToRoomWithId:[NSString stringWithFormat:@"6666%@", self.clintid] options:nil];
 }
 
+#pragma mark - Clear Connection
+
+- (void)applicationWillResignActive:(UIApplication*)application {
+    // close connection clearly
+    [self disconnect];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    //back button 
+    [super viewWillDisappear:animated];
+    [self disconnect];
+    [self.client disconnectWithCompletionHandler:^(NSUInteger code) {
+        // The client is disconnected when this completion handler is called
+        NSLog(@"MQTT is disconnected");
+    }];
+}
+
 - (void)dealloc
 {
     [self.client disconnectWithCompletionHandler:^(NSUInteger code) {
@@ -158,7 +175,7 @@
     [self disconnect];
 }
 
-#pragma mark - I
+#pragma mark - btnAction
 
 -(void)sendStatus {
     NSString * pubMsg = [NSString stringWithFormat:@"%d",self.status];
@@ -301,22 +318,6 @@
 
 - (void)videoView:(RTCEAGLVideoView *)videoView didChangeVideoSize:(CGSize)size {
     /* resize self.localView or self.remoteView based on the size returned */
-}
-
-# pragma tag
-// close connection clearly
-- (void)applicationWillResignActive:(UIApplication*)application {
-    [self disconnect];
-}
-
-//back button
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-    [self disconnect];
-    [self.client disconnectWithCompletionHandler:^(NSUInteger code) {
-        // The client is disconnected when this completion handler is called
-        NSLog(@"MQTT is disconnected");
-    }];
 }
 
 @end
