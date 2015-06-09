@@ -24,7 +24,7 @@ iphone5, iphone5s, iphone5c
 
 ```
 $ git clone https://github.com/kuroei/NifRomoController.git
-$ cd NifRomoClient/
+$ cd NifRomoController/
 $ pod install
 ```
 ## How to Use
