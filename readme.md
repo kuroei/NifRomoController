@@ -32,7 +32,7 @@ $ pod install
 
 ### Run Project and build
 
-After installed the pods, you can start this  p-r with  NifRomo.xcworkspace and then build it to your iphone.
+After installed the pods, you can start this  p-r with  NifRomoController.xcworkspace and then build it to your iphone.
 
 ### Run Application
 
