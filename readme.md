@@ -1,7 +1,7 @@
 NIFTY Romo Project
 ------------------------------------------------------------
 
-This project is an simple IoT Demo which has been on show atÅuCloud Computing Expo Japan Spring 2015ÅvandÅuAPPS JAPAN 2015Åv.
+This project is an simple IoT Demo which has been on show at„ÄåCloud Computing Expo Japan Spring 2015„Äçand„ÄåAPPS JAPAN 2015„Äç.
 We used the smartphone robot Romo, MQTT and WebRTC to show how to creat a simple application for IoT.
 
 ![img](https://scontent.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/11393160_823670774378068_6055071381405467661_n.jpg?oh=cd90b4685e1be44f2e0b086f8af8743c&oe=5602782D)
@@ -45,7 +45,7 @@ After installed the pods, you can start this project with NifRomoController.xcwo
 
 ## About the MQTT server
 
-This project use the ÅuNIFTYCloud MQTTÅvas default setting .you also can change it with your MQTT Server.
+This project use the „ÄåNIFTYCloud MQTT„Äças default setting .you also can change it with your MQTT Server.
 
-* ÅuNIFTYCloud MQTTÅv(http://cloud.nifty.com/service/mqtt.htm)
+* „ÄåNIFTYCloud MQTT„Äç(http://cloud.nifty.com/service/mqtt.htm)
 
