@@ -29,6 +29,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *username;
 @property (strong, nonatomic) IBOutlet UITextField *pwd;
 @property (strong, nonatomic) IBOutlet UITextField *romoid;
+@property (strong, nonatomic) IBOutlet UITextField *hueid;
 
 - (IBAction)ConnectBtnAcation:(id)sender;
 

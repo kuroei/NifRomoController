@@ -57,6 +57,7 @@
     mqttviewController.username = self.username.text;
     mqttviewController.pwd = self.pwd.text;
     mqttviewController.clintid = self.romoid.text;
+    mqttviewController.hueid = self.hueid.text;
     
     [self presentViewController:mqttviewController animated:YES completion:nil];
 }

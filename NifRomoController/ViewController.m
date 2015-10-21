@@ -15,7 +15,7 @@
 */
 
 #import "ViewController.h"
-#import <AppRTC/RTCEAGLVideoView.h>
+#import <libjingle_peerconnection/RTCEAGLVideoView.h>
 #import <AppRTC/ARDAppClient.h>
 #import "Command.h"
 
@@ -46,8 +46,8 @@
         self.clintid = @"";
     }
     
-    self.pubTopicMove = [NSString stringWithFormat:@"%@/%@", self.clintid, kTopic];
-    self.pubTopicPic = [NSString stringWithFormat:@"%@/%@", self.clintid, kTopicPic];
+    self.pubTopicMove = [NSString stringWithFormat:@"%@/%@/%@", self.hueid, self.clintid, kTopic];
+    self.pubTopicPic = [NSString stringWithFormat:@"%@/%@/%@", self.hueid, self.clintid, kTopicPic];
     [self.client connectToHost:self.host completionHandler:^(MQTTConnectionReturnCode code) {
         if (code ==  ConnectionAccepted) {
             // The client is connected when this completion handler is called

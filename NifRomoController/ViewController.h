@@ -15,7 +15,7 @@
 */
 
 #import <UIKit/UIKit.h>
-#import <AppRTC/RTCEAGLVideoView.h>
+#import <libjingle_peerconnection/RTCEAGLVideoView.h>
 #import <AppRTC/ARDAppClient.h>
 #import <MQTTKit.h>
 
@@ -30,6 +30,7 @@
 @property (nonatomic,retain)  NSString * clintid;
 @property (nonatomic,retain)  NSString * pubTopicMove;
 @property (nonatomic,retain)  NSString * pubTopicPic;
+@property (nonatomic,retain)  NSString * hueid;
 
 @property (nonatomic)  unsigned int status;
 
